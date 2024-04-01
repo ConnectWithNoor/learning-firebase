@@ -1,6 +1,9 @@
-import { ItemAccess, ItemType } from "./api/items/route";
+import { ItemAccess, ItemType } from "@/app/api/items/route";
+import React from "react";
 
-export default async function Home() {
+type Props = {};
+
+async function AdminPage({}: Props) {
   let items: ItemType[] = [];
 
   const response = await fetch(`${process.env.API_URL}/api/items`);
@@ -10,10 +13,9 @@ export default async function Home() {
       items = itemsJson;
     }
   }
-
   return (
     <div>
-      <h1 className="text-white text-xl mb-10">Home Page</h1>
+      <h1 className="text-white text-xl mb-10">Admin Page</h1>
       {items.map((item) => {
         return (
           <div
@@ -40,3 +42,5 @@ export default async function Home() {
     </div>
   );
 }
+
+export default AdminPage;
