@@ -1,0 +1,95 @@
+"use client";
+
+import { User, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import React, { createContext, useContext, useEffect, useState } from "react";
+import { firebaseAuth } from "@/lib/firebase/client";
+
+type Props = { children: React.ReactNode };
+
+type AuthContextType = {
+  currentUser: User | null; // to check if the user is signin or signout
+  isAdmin: boolean;
+  isPro: boolean;
+  loginGoogle: () => Promise<void>;
+  logout: () => Promise<void>;
+};
+
+const FirebaseAuthContext = createContext<AuthContextType | null>(null);
+
+function FirebaseAuthProvider({ children }: Props) {
+  const [currentUser, setCurrentUser] = useState<User | null>(null);
+  const [isAdmin, setIsAdmin] = useState<boolean>(false);
+  const [isPro, setIsPro] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (!firebaseAuth) return;
+
+    // auth state change listener
+    const unsub = firebaseAuth.onAuthStateChanged(async (user) => {
+      if (!user) {
+        setCurrentUser(null);
+      }
+      if (user) {
+        setCurrentUser(user);
+      }
+    });
+
+    return () => unsub();
+  }, []);
+
+  function loginGoogle(): Promise<void> {
+    return new Promise((resolve, reject) => {
+      if (!firebaseAuth) {
+        reject();
+        return;
+      }
+
+      signInWithPopup(firebaseAuth, new GoogleAuthProvider())
+        .then((user) => {
+          console.log("Signed in!");
+          resolve();
+        })
+        .catch((err) => {
+          console.error("error logging in with google", err);
+          reject();
+        });
+    });
+  }
+
+  function logout(): Promise<void> {
+    return new Promise((resolve, reject) => {
+      if (!firebaseAuth) {
+        reject();
+        return;
+      }
+      firebaseAuth
+        .signOut()
+        .then(() => {
+          console.log("signed out");
+          resolve();
+        })
+        .catch(() => {
+          console.error("error logging in with google");
+          reject();
+        });
+    });
+  }
+
+  return (
+    <FirebaseAuthContext.Provider
+      value={{
+        currentUser,
+        isAdmin,
+        isPro,
+        loginGoogle,
+        logout,
+      }}
+    >
+      {children}
+    </FirebaseAuthContext.Provider>
+  );
+}
+
+export const useAuth = () => useContext(FirebaseAuthContext);
+
+export default FirebaseAuthProvider;

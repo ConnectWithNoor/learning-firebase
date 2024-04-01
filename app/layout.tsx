@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/navbar/navbar";
+import FirebaseAuthProvider from "@/components/providers/auth-providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,8 +20,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <main className="flex flex-col items-center h-screen w-screen bg-slate-800 pt-40">
-          <Navbar />
-          {children}
+          <FirebaseAuthProvider>
+            <Navbar />
+            {children}
+          </FirebaseAuthProvider>
         </main>
       </body>
     </html>
