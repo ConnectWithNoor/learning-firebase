@@ -25,10 +25,25 @@ function Navbar({}: Props) {
       ?.logout()
       .then((res) => console.log("Logged out"))
       .catch((err) => console.log("Error logging out"));
-
   return (
     <div className="fixed top-12 left-0 w-full flex items-center justify-center">
       <div className="flex items-center bg-slate-200/10 gap-2 py-1 px-2 rounded-lg border border-slate-300/10 shadow mb-12">
+        {auth?.currentUser && !auth.isPro && !auth.isAdmin && (
+          <div className="bg-pink-600 text-white text-sm font-semibold px-2 py-1 rounded-full">
+            User
+          </div>
+        )}
+        {auth?.currentUser && auth.isPro && !auth.isAdmin && (
+          <div className="bg-emerald-600 text-white text-sm font-semibold px-2 py-1 rounded-full">
+            Pro
+          </div>
+        )}
+        {auth?.currentUser && auth.isAdmin && (
+          <div className="bg-orange-400 text-white text-sm font-semibold px-2 py-1 rounded-full">
+            Admin
+          </div>
+        )}
+
         {!auth?.currentUser ? (
           <button
             onClick={loginGoogle}

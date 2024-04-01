@@ -28,9 +28,24 @@ function FirebaseAuthProvider({ children }: Props) {
     const unsub = firebaseAuth.onAuthStateChanged(async (user) => {
       if (!user) {
         setCurrentUser(null);
+        setIsAdmin(false);
+        setIsPro(false);
       }
       if (user) {
         setCurrentUser(user);
+
+        const tokenValues = await user.getIdTokenResult();
+        setIsAdmin(tokenValues.claims.role === "admin");
+
+        const userResponse = await fetch(`/api/users/${user.uid}`);
+        if (userResponse.ok) {
+          const userJson = await userResponse.json();
+          if (userJson?.isPro) {
+            setIsPro(true);
+          }
+        } else {
+          console.error("Could not fetch user info");
+        }
       }
     });
 

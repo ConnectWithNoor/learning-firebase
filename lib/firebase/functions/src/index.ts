@@ -1,19 +1,46 @@
-/**
- * Import function triggers from their respective submodules:
- *
- * import {onCall} from "firebase-functions/v2/https";
- * import {onDocumentWritten} from "firebase-functions/v2/firestore";
- *
- * See a full list of supported triggers at https://firebase.google.com/docs/functions
- */
+import { auth, config } from "firebase-functions";
+import { firestore } from "firebase-admin";
+import { getAuth } from "firebase-admin/auth";
+import { initializeApp } from "firebase-admin/app";
 
-import {onRequest} from "firebase-functions/v2/https";
-import * as logger from "firebase-functions/logger";
+// connect firebase connections with our app
+initializeApp(config().firebase);
 
-// Start writing functions
-// https://firebase.google.com/docs/functions/typescript
+// run function everytime a user is created
+const onUserCreate = auth.user().onCreate(async (user) => {
+  if (user.email && user.email === "admin@example.com") {
+    await firestore().doc(`users/${user.uid}`).create({
+      isPro: true,
+    });
 
-// export const helloWorld = onRequest((request, response) => {
-//   logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+    const customClaims = {
+      role: "admin",
+    };
+
+    try {
+      await getAuth().setCustomUserClaims(user.uid, customClaims);
+    } catch (error) {
+      console.log(error);
+    }
+
+    return;
+  }
+
+  if (user.email && user.email === "pro@example.com") {
+    await firestore().doc(`users/${user.uid}`).create({
+      isPro: true,
+    });
+
+    return;
+  }
+
+  // set isPro to false, when a new user is created.
+
+  await firestore().doc(`users/${user.uid}`).create({
+    isPro: false,
+  });
+
+  return;
+});
+
+export { onUserCreate };
