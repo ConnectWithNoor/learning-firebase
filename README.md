@@ -35,8 +35,9 @@ npm run emulators
 - Create FirebaseAuth (for logging and logout) using client initalization. [Read here](https://stackoverflow.com/a/42966170)
 - Created firebaseAuth in server as well
 - Use of Firebase functions (they run in cloud for everytime state changes in authentication, firestore, storage, etc.)
-- flow goes from user first ever signin (client) triggers the firebase function which creates that new user collection in firestore along with a custom claim (role for the user on the authentication side), and on every signin fetches that custom role (getIdTokenResult) to check if it is admin/pro/normal user.
-- Role based route protection using jwt tokens on server components
+- flow goes from user first ever signin (client) triggers the firebase function which creates that new user collection in firestore along with a custom claim (role for the user on the authentication side).
+- Every signin fetches that custom role (getIdTokenResult) to check if it is admin/pro/normal user and keep it in Auth Context provider(this is for client compoents)
+- For server compoenents, since it doesn't have access to Auth context provider, we have to store and fetch the jwt cookies to handle dynamic role based route protection on server components.
 
 #### Authentication Strategies used
 
