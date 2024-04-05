@@ -1,9 +1,18 @@
 import { ItemAccess, ItemType } from "@/app/api/items/route";
+import { getAuth } from "firebase-admin/auth";
+import { cookies } from "next/headers";
 import React from "react";
 
 type Props = {};
 
 async function AdminPage({}: Props) {
+  const cookieStore = cookies();
+  const authToken = cookieStore.get("firebaseIdToken")?.value;
+
+  if (!authToken) {
+    return <h1 className="text-white text-xl mb-10">Restricted page</h1>;
+  }
+
   let items: ItemType[] = [];
 
   const response = await fetch(`${process.env.API_URL}/api/items`);

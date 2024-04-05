@@ -7,9 +7,11 @@ import {
 import { Firestore, getFirestore } from "firebase-admin/firestore";
 
 import serviceAccount from "@/lib/firebase/service-account.json";
+import { Auth, getAuth } from "firebase-admin/auth";
 
 const currentApps = getApps();
 let firestore: Firestore | null = null;
+let firebaseAuth: Auth | null = null;
 
 if (currentApps.length <= 0) {
   if (process.env.NEXT_PUBLIC_APP_ENV === "emulator") {
@@ -25,9 +27,11 @@ if (currentApps.length <= 0) {
   });
 
   firestore = getFirestore(app);
+  firebaseAuth = getAuth(app);
 } else {
   // if we have already initialized the app, we will use the first one
   firestore = getFirestore(currentApps[0]);
+  firebaseAuth = getAuth(currentApps[0]);
 }
 
-export { firestore };
+export { firestore, firebaseAuth };

@@ -33,9 +33,10 @@ npm run emulators
 - Setup `emulator` env to use firebase emulator service in our local system (check pkg.json).
 - FirebaseAuthContext to keep track of current logged in users.
 - Create FirebaseAuth (for logging and logout) using client initalization. [Read here](https://stackoverflow.com/a/42966170)
+- Created firebaseAuth in server as well
 - Use of Firebase functions (they run in cloud for everytime state changes in authentication, firestore, storage, etc.)
-- flow goes from user first ever signin (client) triggers the firebase function which creates that new user collection in firestore, and on every signin fetches that collection to check if it is admin/pro/normal user.
--
+- flow goes from user first ever signin (client) triggers the firebase function which creates that new user collection in firestore along with a custom claim (role for the user on the authentication side), and on every signin fetches that custom role (getIdTokenResult) to check if it is admin/pro/normal user.
+- Role based route protection using jwt tokens on server components
 
 #### Authentication Strategies used
 

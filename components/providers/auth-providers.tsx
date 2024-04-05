@@ -1,10 +1,23 @@
 "use client";
 
+import Cookies from "js-cookie";
 import { User, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { firebaseAuth } from "@/lib/firebase/client";
 
 type Props = { children: React.ReactNode };
+
+export function getAuthToken(): string | undefined {
+  return Cookies.get("firebaseIdToken");
+}
+
+export function setAuthToken(token: string): string | undefined {
+  return Cookies.set("firebaseIdToken", token, { secure: true });
+}
+
+export function removeAuthToken(): void {
+  return Cookies.remove("firebaseIdToken");
+}
 
 type AuthContextType = {
   currentUser: User | null; // to check if the user is signin or signout
@@ -30,10 +43,15 @@ function FirebaseAuthProvider({ children }: Props) {
         setCurrentUser(null);
         setIsAdmin(false);
         setIsPro(false);
+        removeAuthToken();
       }
       if (user) {
         setCurrentUser(user);
+        const token = await user.getIdToken();
+        console.log(token);
+        setAuthToken(token);
 
+        // get the token values (custom claims)
         const tokenValues = await user.getIdTokenResult();
         setIsAdmin(tokenValues.claims.role === "admin");
 
