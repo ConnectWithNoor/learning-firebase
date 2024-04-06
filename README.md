@@ -45,8 +45,8 @@ npm run emulators
 
 #### Useful resources for firebase with NextJS
 
-1 - [Client side auth, firestore, CRUD operations, server actions to replace client CRUD to server](https://www.youtube.com/watch?v=C3iYBxO8Iao)
-2 - [Firebase functions](https://www.youtube.com/watch?v=A77JMPOdMdc)
-3 - [client firebase storage](https://www.youtube.com/watch?v=hrlmbRo1iOQ)
+- [Client side auth, firestore, CRUD operations, server actions to replace client CRUD to server](https://www.youtube.com/watch?v=C3iYBxO8Iao)
+- [Firebase functions](https://www.youtube.com/watch?v=A77JMPOdMdc)
+- [client firebase storage](https://www.youtube.com/watch?v=hrlmbRo1iOQ)
 
 Made by [Noor Muhammad](https://www.linkedin.com/in/connectwithnoor)
