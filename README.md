@@ -41,8 +41,16 @@ npm run emulators
 - Added jwt bearer authentication on list API to access only role based data.
 - Added a security measure in user API by jwt bearer authentication to make sure user can only access data which belong to them.
 
+- firebase hosting has issues with server actions, to you need to replace the server actions with firebase functions if you want to deploy on firebase. Vercel is a good alternative.
+
 #### Authentication Strategies used
 
 1 - Login with Google (OAuth)
+
+#### Useful resources for firebase with NextJS
+
+1 - (Client side auth, firestore, CRUD operations, server actions to replace client CRUD to server)[https://www.youtube.com/watch?v=C3iYBxO8Iao]
+2 - (Firebase functions)[https://www.youtube.com/watch?v=A77JMPOdMdc]
+3 - (client firebase storage)[https://www.youtube.com/watch?v=hrlmbRo1iOQ]
 
 Made by [Noor Muhammad](https://www.linkedin.com/in/connectwithnoor)
