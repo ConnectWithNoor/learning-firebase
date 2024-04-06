@@ -17,13 +17,17 @@ function Navbar({}: Props) {
   const loginGoogle = () =>
     auth
       ?.loginGoogle()
-      .then((res) => console.log("Logged in"))
+      .then(
+        (res) => window.location.reload() // to sync the user state in client and server
+      )
       .catch((err) => console.log("Error logging in"));
 
   const logoutUser = () =>
     auth
       ?.logout()
-      .then((res) => console.log("Logged out"))
+      .then(
+        (res) => window.location.reload() // to sync the user state in client and server
+      )
       .catch((err) => console.log("Error logging out"));
   return (
     <div className="fixed top-12 left-0 w-full flex items-center justify-center">

@@ -1,0 +1,501 @@
+[debug] [2024-04-06T11:31:56.659Z] ----------------------------------------------------------------------
+[debug] [2024-04-06T11:31:56.663Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-04-06T11:31:56.664Z] CLI Version:   13.6.0
+[debug] [2024-04-06T11:31:56.664Z] Platform:      win32
+[debug] [2024-04-06T11:31:56.664Z] Node Version:  v20.11.0
+[debug] [2024-04-06T11:31:56.664Z] Time:          Sat Apr 06 2024 16:31:56 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-04-06T11:31:56.665Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-06T11:31:56.681Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-04-06T11:31:56.848Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-06T11:31:56.849Z] > authorizing via signed-in user (connectwithnoor1@gmail.com)
+[debug] [2024-04-06T11:31:57.066Z] openjdk version "17.0.9" 2023-10-17 LTS
+
+[debug] [2024-04-06T11:31:57.067Z] OpenJDK Runtime Environment Microsoft-8552009 (build 17.0.9+8-LTS)
+OpenJDK 64-Bit Server VM Microsoft-8552009 (build 17.0.9+8-LTS, mixed mode, sharing)
+
+[debug] [2024-04-06T11:31:57.086Z] Parsed Java major version: 17
+[info] i  emulators: Starting emulators: auth, functions, firestore {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore"}}
+[debug] [2024-04-06T11:31:57.106Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-06T11:31:57.106Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-06T11:31:57.106Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-06T11:31:57.107Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-06T11:31:57.107Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-04-06T11:31:57.114Z] [hub] writing locator at C:\Users\TESLAL~1\AppData\Local\Temp\hub-learning-nextjs-firebase-2429f.json
+[debug] [2024-04-06T11:31:57.135Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-06T11:31:57.135Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-06T11:31:57.135Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2024-04-06T11:31:57.141Z] defaultcredentials: writing to file C:\Users\Tesla Laptops\AppData\Roaming\firebase\connectwithnoor1_gmail_com_application_default_credentials.json
+[debug] [2024-04-06T11:31:57.156Z] Setting GAC to C:\Users\Tesla Laptops\AppData\Roaming\firebase\connectwithnoor1_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Tesla Laptops\\AppData\\Roaming\\firebase\\connectwithnoor1_gmail_com_application_default_credentials.json"}}
+[debug] [2024-04-06T11:31:57.159Z] > refreshing access token with scopes: []
+[debug] [2024-04-06T11:31:57.162Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-04-06T11:31:57.162Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-06T11:31:57.371Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-04-06T11:31:57.371Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-04-06T11:31:57.484Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-04-06T11:31:57.484Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-06T11:31:57.501Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/learning-nextjs-firebase-2429f/adminSdkConfig [none]
+[debug] [2024-04-06T11:31:58.483Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/learning-nextjs-firebase-2429f/adminSdkConfig 200
+[debug] [2024-04-06T11:31:58.483Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/learning-nextjs-firebase-2429f/adminSdkConfig {"projectId":"learning-nextjs-firebase-2429f","storageBucket":"learning-nextjs-firebase-2429f.appspot.com","locationId":"us-central"}
+[debug] [2024-04-06T11:31:58.505Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-04-06T11:31:58.506Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2024-04-06T11:31:58.506Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\Tesla Laptops\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.19.4.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","learning-nextjs-firebase-2429f","--rules","C:\\learning\\_learning-nextjs-firebase\\firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\Tesla Laptops\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.19.4.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"learning-nextjs-firebase-2429f\",\"--rules\",\"C:\\\\learning\\\\_learning-nextjs-firebase\\\\firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2024-04-06T11:32:01.044Z] Apr 06, 2024 4:32:01 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:32:01 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\r\nINFO: Started WebSocket server on ws://127.0.0.1:9150\r\n"}}
+[debug] [2024-04-06T11:32:01.099Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2024-04-06T11:32:01.099Z] 127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\r\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\r\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\r\nDev App Server is now running.\n\r\n"}}
+[info] +  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2024-04-06T11:32:12.431Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-04-06T11:32:12.432Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-04-06T11:32:12.432Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Tesla Laptops\\.cache\\firebase\\emulators\\ui-v1.11.8\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Tesla Laptops\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.8\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[info] i  functions: Watching "C:\learning\_learning-nextjs-firebase\lib\firebase\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\learning\\_learning-nextjs-firebase\\lib\\firebase\\functions\" for Cloud Functions..."}}
+[debug] [2024-04-06T11:32:13.218Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-04-06T11:32:16.073Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-06T11:32:16.073Z] Building nodejs source
+[debug] [2024-04-06T11:32:16.074Z] Failed to find version of module node: reached end of search path C:\learning\_learning-nextjs-firebase\lib\firebase\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-06T11:32:16.076Z] Web / API server started at 127.0.0.1:4000
+Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\nWeb / API server started at ::1:4000\n"}}
+[debug] [2024-04-06T11:32:16.077Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-06T11:32:16.085Z] Found firebase-functions binary at 'C:\learning\_learning-nextjs-firebase\lib\firebase\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8504
+
+[debug] [2024-04-06T11:32:23.961Z] Got response from /__/functions.yaml {"endpoints":{"onUserCreate":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"eventTrigger":{"eventType":"providers/firebase.auth/eventTypes/user.create","eventFilters":{"resource":"projects/learning-nextjs-firebase-2429f"},"retry":false},"labels":{},"entryPoint":"onUserCreate"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: onUserCreate. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: onUserCreate."}}
+[debug] [2024-04-06T11:32:29.009Z] addAuthTrigger {"eventTrigger":{"eventType":"providers/firebase.auth/eventTypes/user.create","resource":"projects/learning-nextjs-firebase-2429f"}}
+[info] +  functions[us-central1-onUserCreate]: auth function initialized. {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mauth\u001b[22m function initialized."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-04-06T11:35:18.206Z] Apr 06, 2024 4:35:18 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:35:18 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\r\nINFO: Connected to new websocket client\r\n"}}
+[debug] [2024-04-06T11:35:23.506Z] Apr 06, 2024 4:35:23 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:35:23 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\r\nINFO: Connected to new websocket client\r\n"}}
+[debug] [2024-04-06T11:35:24.997Z] Apr 06, 2024 4:35:24 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:35:24 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\r\nINFO: Connected to new websocket client\r\n"}}
+[debug] [2024-04-06T11:35:25.081Z] Apr 06, 2024 4:35:25 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:35:25 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:35:25.266Z] Apr 06, 2024 4:35:25 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:35:25 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:35:26.623Z] Apr 06, 2024 4:35:26 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:35:26 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\r\nINFO: Connected to new websocket client\r\n"}}
+[debug] [2024-04-06T11:35:39.769Z] >>> [apiv2][query] POST http://127.0.0.1:5001/functions/projects/learning-nextjs-firebase-2429f/trigger_multicast [none]
+[debug] [2024-04-06T11:35:39.770Z] >>> [apiv2][body] POST http://127.0.0.1:5001/functions/projects/learning-nextjs-firebase-2429f/trigger_multicast {"eventId":"75955890-507a-43df-a5f0-dcda4b69af36","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/learning-nextjs-firebase-2429f","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2024-04-06T11:35:39.767Z","data":{"uid":"q7HrM44Op5IzeK2IiAr5fbtahXSg","email":"grass.chicken.999@example.com","emailVerified":true,"displayName":"Grass Chicken","metadata":{"creationTime":"2024-04-06T11:35:39.766Z","lastSignInTime":"2024-04-06T11:35:39.766Z"},"customClaims":{},"providerData":[{"providerId":"google.com","rawId":"9358817038523373532845992937161442527969","federatedId":"9358817038523373532845992937161442527969","displayName":"Grass Chicken","email":"grass.chicken.999@example.com","screenName":"chicken_grass"}]}}
+[debug] [2024-04-06T11:35:39.779Z] [work-queue] {"queuedWork":["us-central1-onUserCreate-0-2024-04-06T11:35:39.779Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-06T11:35:39.779Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["us-central1-onUserCreate-0-2024-04-06T11:35:39.779Z"],"workRunningCount":1}
+[debug] [2024-04-06T11:35:39.780Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-06T11:35:39.782Z] <<< [apiv2][status] POST http://127.0.0.1:5001/functions/projects/learning-nextjs-firebase-2429f/trigger_multicast 200
+[debug] [2024-04-06T11:35:39.782Z] <<< [apiv2][body] POST http://127.0.0.1:5001/functions/projects/learning-nextjs-firebase-2429f/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2024-04-06T11:35:39.783Z] [work-queue] {"queuedWork":["/functions/projects/learning-nextjs-firebase-2429f/triggers/us-central1-onUserCreate-0-2024-04-06T11:35:39.783Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-06T11:35:39.784Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/functions/projects/learning-nextjs-firebase-2429f/triggers/us-central1-onUserCreate-0-2024-04-06T11:35:39.783Z"],"workRunningCount":1}
+[debug] [2024-04-06T11:35:39.784Z] Accepted request POST /functions/projects/learning-nextjs-firebase-2429f/triggers/us-central1-onUserCreate-0 --> us-central1-onUserCreate-0
+[debug] [2024-04-06T11:35:39.789Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-04-06T11:35:39.790Z] [functions] Got req.url=/functions/projects/learning-nextjs-firebase-2429f/triggers/us-central1-onUserCreate-0, mapping to path=/functions/projects/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/functions/projects/learning-nextjs-firebase-2429f/triggers/us-central1-onUserCreate-0, mapping to path=/functions/projects/"}}
+[debug] [2024-04-06T11:35:39.801Z] [worker-pool] addWorker(us-central1-onUserCreate) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-onUserCreate)"}}
+[debug] [2024-04-06T11:35:39.804Z] [worker-pool] Adding worker with key us-central1-onUserCreate, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-onUserCreate, total=1"}}
+[debug] [2024-04-06T11:35:41.539Z] [runtime-status] [9200] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\learning\\_learning-nextjs-firebase\\lib\\firebase\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\learning\\\\_learning-nextjs-firebase\\\\lib\\\\firebase\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-04-06T11:35:41.540Z] [runtime-status] [9200] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.2","resolution":"C:\\learning\\_learning-nextjs-firebase\\lib\\firebase\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.2\",\"resolution\":\"C:\\\\learning\\\\_learning-nextjs-firebase\\\\lib\\\\firebase\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-04-06T11:35:41.541Z] [runtime-status] [9200] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-04-06T11:35:41.542Z] [runtime-status] [9200] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.2","resolution":"C:\\learning\\_learning-nextjs-firebase\\lib\\firebase\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.2\",\"resolution\":\"C:\\\\learning\\\\_learning-nextjs-firebase\\\\lib\\\\firebase\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-04-06T11:35:41.817Z] [runtime-status] [9200] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-04-06T11:35:41.817Z] [runtime-status] [9200] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.8.2","resolution":"C:\\learning\\_learning-nextjs-firebase\\lib\\firebase\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.8.2\",\"resolution\":\"C:\\\\learning\\\\_learning-nextjs-firebase\\\\lib\\\\firebase\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-04-06T11:35:41.818Z] [runtime-status] [9200] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.2","resolution":"C:\\learning\\_learning-nextjs-firebase\\lib\\firebase\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.2\",\"resolution\":\"C:\\\\learning\\\\_learning-nextjs-firebase\\\\lib\\\\firebase\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-04-06T11:35:41.820Z] [runtime-status] [9200] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\learning\\_learning-nextjs-firebase\\lib\\firebase\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\learning\\\\_learning-nextjs-firebase\\\\lib\\\\firebase\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-04-06T11:35:41.822Z] [runtime-status] [9200] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.2","resolution":"C:\\learning\\_learning-nextjs-firebase\\lib\\firebase\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.2\",\"resolution\":\"C:\\\\learning\\\\_learning-nextjs-firebase\\\\lib\\\\firebase\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-04-06T11:35:41.822Z] [runtime-status] [9200] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\learning\\_learning-nextjs-firebase\\lib\\firebase\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\learning\\\\_learning-nextjs-firebase\\\\lib\\\\firebase\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[warn] !  It looks like you're trying to access functions.config().firebase but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"It looks like you're trying to access functions.config().firebase but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator"}}
+[debug] [2024-04-06T11:35:41.833Z] [runtime-status] [9200] Functions runtime initialized. {"cwd":"C:\\learning\\_learning-nextjs-firebase\\lib\\firebase\\functions","node_version":"20.11.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] Functions runtime initialized. {\"cwd\":\"C:\\\\learning\\\\_learning-nextjs-firebase\\\\lib\\\\firebase\\\\functions\",\"node_version\":\"20.11.0\"}"}}
+[debug] [2024-04-06T11:35:41.834Z] [runtime-status] [9200] Listening to port: \\?\pipe\fire_emu_75429f15311da563 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] Listening to port: \\\\?\\pipe\\fire_emu_75429f15311da563"}}
+[debug] [2024-04-06T11:35:41.929Z] [worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: IDLE"}}
+[debug] [2024-04-06T11:35:41.929Z] [worker-pool] submitRequest(triggerId=us-central1-onUserCreate) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-onUserCreate)"}}
+[info] i  functions: Beginning execution of "us-central1-onUserCreate" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"Beginning execution of \"us-central1-onUserCreate\""}}
+[debug] [2024-04-06T11:35:41.931Z] [worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: BUSY"}}
+[debug] [2024-04-06T11:35:41.947Z] [runtime-status] [9200] ProcessBackground: lifting resource.name from resource {"name":"projects/learning-nextjs-firebase-2429f","service":"firebaseauth.googleapis.com"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] ProcessBackground: lifting resource.name from resource {\"name\":\"projects/learning-nextjs-firebase-2429f\",\"service\":\"firebaseauth.googleapis.com\"}"}}
+[debug] [2024-04-06T11:35:41.948Z] [runtime-status] [9200] RunBackground {"data":{"uid":"q7HrM44Op5IzeK2IiAr5fbtahXSg","email":"grass.chicken.999@example.com","emailVerified":true,"displayName":"Grass Chicken","metadata":{"creationTime":"2024-04-06T11:35:39.766Z","lastSignInTime":"2024-04-06T11:35:39.766Z"},"customClaims":{},"providerData":[{"providerId":"google.com","rawId":"9358817038523373532845992937161442527969","federatedId":"9358817038523373532845992937161442527969","displayName":"Grass Chicken","email":"grass.chicken.999@example.com","screenName":"chicken_grass"}]},"context":{"eventId":"75955890-507a-43df-a5f0-dcda4b69af36","eventType":"providers/firebase.auth/eventTypes/user.create","resource":"projects/learning-nextjs-firebase-2429f","params":{},"timestamp":"2024-04-06T11:35:39.767Z"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] RunBackground {\"data\":{\"uid\":\"q7HrM44Op5IzeK2IiAr5fbtahXSg\",\"email\":\"grass.chicken.999@example.com\",\"emailVerified\":true,\"displayName\":\"Grass Chicken\",\"metadata\":{\"creationTime\":\"2024-04-06T11:35:39.766Z\",\"lastSignInTime\":\"2024-04-06T11:35:39.766Z\"},\"customClaims\":{},\"providerData\":[{\"providerId\":\"google.com\",\"rawId\":\"9358817038523373532845992937161442527969\",\"federatedId\":\"9358817038523373532845992937161442527969\",\"displayName\":\"Grass Chicken\",\"email\":\"grass.chicken.999@example.com\",\"screenName\":\"chicken_grass\"}]},\"context\":{\"eventId\":\"75955890-507a-43df-a5f0-dcda4b69af36\",\"eventType\":\"providers/firebase.auth/eventTypes/user.create\",\"resource\":\"projects/learning-nextjs-firebase-2429f\",\"params\":{},\"timestamp\":\"2024-04-06T11:35:39.767Z\"}}"}}
+[debug] [2024-04-06T11:35:45.270Z] Apr 06, 2024 4:35:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:35:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:35:45.704Z] Apr 06, 2024 4:35:45 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:35:45 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\r\nINFO: Websocket client disconnected\r\n"}}
+[debug] [2024-04-06T11:35:45.885Z] Apr 06, 2024 4:35:45 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:35:45 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\r\nINFO: Connected to new websocket client\r\n"}}
+[debug] [2024-04-06T11:35:46.646Z] Apr 06, 2024 4:35:46 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:35:46 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:35:46.769Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-onUserCreate" in 4839.1258ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"Finished \"us-central1-onUserCreate\" in 4839.1258ms"}}
+[debug] [2024-04-06T11:35:46.771Z] [worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: IDLE"}}
+[debug] [2024-04-06T11:35:46.771Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-04-06T11:35:46.771Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-04-06T11:35:46.771Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-06T11:35:57.666Z] >>> [apiv2][query] POST http://127.0.0.1:5001/functions/projects/learning-nextjs-firebase-2429f/trigger_multicast [none]
+[debug] [2024-04-06T11:35:57.666Z] >>> [apiv2][body] POST http://127.0.0.1:5001/functions/projects/learning-nextjs-firebase-2429f/trigger_multicast {"eventId":"7855a1d8-3ee7-4435-b04b-a3b5a397d937","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/learning-nextjs-firebase-2429f","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2024-04-06T11:35:57.665Z","data":{"uid":"dtuoiVdlRuMoCtWjSt1SMIU0a36U","email":"pro@example.com","emailVerified":true,"displayName":"Algae Raccoon","metadata":{"creationTime":"2024-04-06T11:35:57.665Z","lastSignInTime":"2024-04-06T11:35:57.665Z"},"customClaims":{},"providerData":[{"providerId":"google.com","rawId":"7849397339889343702498082613126092843283","federatedId":"7849397339889343702498082613126092843283","displayName":"Algae Raccoon","email":"pro@example.com","screenName":"raccoon_algae"}]}}
+[debug] [2024-04-06T11:35:57.670Z] [work-queue] {"queuedWork":["us-central1-onUserCreate-0-2024-04-06T11:35:57.670Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-06T11:35:57.671Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["us-central1-onUserCreate-0-2024-04-06T11:35:57.670Z"],"workRunningCount":1}
+[debug] [2024-04-06T11:35:57.671Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-06T11:35:57.673Z] <<< [apiv2][status] POST http://127.0.0.1:5001/functions/projects/learning-nextjs-firebase-2429f/trigger_multicast 200
+[debug] [2024-04-06T11:35:57.673Z] <<< [apiv2][body] POST http://127.0.0.1:5001/functions/projects/learning-nextjs-firebase-2429f/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2024-04-06T11:35:57.674Z] [work-queue] {"queuedWork":["/functions/projects/learning-nextjs-firebase-2429f/triggers/us-central1-onUserCreate-0-2024-04-06T11:35:57.674Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-06T11:35:57.674Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/functions/projects/learning-nextjs-firebase-2429f/triggers/us-central1-onUserCreate-0-2024-04-06T11:35:57.674Z"],"workRunningCount":1}
+[debug] [2024-04-06T11:35:57.674Z] Accepted request POST /functions/projects/learning-nextjs-firebase-2429f/triggers/us-central1-onUserCreate-0 --> us-central1-onUserCreate-0
+[debug] [2024-04-06T11:35:57.678Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-04-06T11:35:57.679Z] [functions] Got req.url=/functions/projects/learning-nextjs-firebase-2429f/triggers/us-central1-onUserCreate-0, mapping to path=/functions/projects/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/functions/projects/learning-nextjs-firebase-2429f/triggers/us-central1-onUserCreate-0, mapping to path=/functions/projects/"}}
+[debug] [2024-04-06T11:35:57.679Z] [worker-pool] submitRequest(triggerId=us-central1-onUserCreate) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-onUserCreate)"}}
+[info] i  functions: Beginning execution of "us-central1-onUserCreate" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"Beginning execution of \"us-central1-onUserCreate\""}}
+[debug] [2024-04-06T11:35:57.680Z] [worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: BUSY"}}
+[debug] [2024-04-06T11:35:57.683Z] [runtime-status] [9200] ProcessBackground: lifting resource.name from resource {"name":"projects/learning-nextjs-firebase-2429f","service":"firebaseauth.googleapis.com"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] ProcessBackground: lifting resource.name from resource {\"name\":\"projects/learning-nextjs-firebase-2429f\",\"service\":\"firebaseauth.googleapis.com\"}"}}
+[debug] [2024-04-06T11:35:57.683Z] [runtime-status] [9200] RunBackground {"data":{"uid":"dtuoiVdlRuMoCtWjSt1SMIU0a36U","email":"pro@example.com","emailVerified":true,"displayName":"Algae Raccoon","metadata":{"creationTime":"2024-04-06T11:35:57.665Z","lastSignInTime":"2024-04-06T11:35:57.665Z"},"customClaims":{},"providerData":[{"providerId":"google.com","rawId":"7849397339889343702498082613126092843283","federatedId":"7849397339889343702498082613126092843283","displayName":"Algae Raccoon","email":"pro@example.com","screenName":"raccoon_algae"}]},"context":{"eventId":"7855a1d8-3ee7-4435-b04b-a3b5a397d937","eventType":"providers/firebase.auth/eventTypes/user.create","resource":"projects/learning-nextjs-firebase-2429f","params":{},"timestamp":"2024-04-06T11:35:57.665Z"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] RunBackground {\"data\":{\"uid\":\"dtuoiVdlRuMoCtWjSt1SMIU0a36U\",\"email\":\"pro@example.com\",\"emailVerified\":true,\"displayName\":\"Algae Raccoon\",\"metadata\":{\"creationTime\":\"2024-04-06T11:35:57.665Z\",\"lastSignInTime\":\"2024-04-06T11:35:57.665Z\"},\"customClaims\":{},\"providerData\":[{\"providerId\":\"google.com\",\"rawId\":\"7849397339889343702498082613126092843283\",\"federatedId\":\"7849397339889343702498082613126092843283\",\"displayName\":\"Algae Raccoon\",\"email\":\"pro@example.com\",\"screenName\":\"raccoon_algae\"}]},\"context\":{\"eventId\":\"7855a1d8-3ee7-4435-b04b-a3b5a397d937\",\"eventType\":\"providers/firebase.auth/eventTypes/user.create\",\"resource\":\"projects/learning-nextjs-firebase-2429f\",\"params\":{},\"timestamp\":\"2024-04-06T11:35:57.665Z\"}}"}}
+[debug] [2024-04-06T11:35:57.705Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-onUserCreate" in 25.7219ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"Finished \"us-central1-onUserCreate\" in 25.7219ms"}}
+[debug] [2024-04-06T11:35:57.715Z] [worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: IDLE"}}
+[debug] [2024-04-06T11:35:57.716Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-04-06T11:35:57.716Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-04-06T11:35:57.716Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-06T11:36:08.104Z] >>> [apiv2][query] POST http://127.0.0.1:5001/functions/projects/learning-nextjs-firebase-2429f/trigger_multicast [none]
+[debug] [2024-04-06T11:36:08.104Z] >>> [apiv2][body] POST http://127.0.0.1:5001/functions/projects/learning-nextjs-firebase-2429f/trigger_multicast {"eventId":"83e1f044-793c-4a83-be6b-e11e84c43721","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/learning-nextjs-firebase-2429f","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2024-04-06T11:36:08.104Z","data":{"uid":"ltYCZOEQVcHyUr88PZhRCggq0etK","email":"admin@example.com","emailVerified":true,"displayName":"Panda Otter","metadata":{"creationTime":"2024-04-06T11:36:08.104Z","lastSignInTime":"2024-04-06T11:36:08.104Z"},"customClaims":{},"providerData":[{"providerId":"google.com","rawId":"0026372541481885082238940265186621611204","federatedId":"0026372541481885082238940265186621611204","displayName":"Panda Otter","email":"admin@example.com","screenName":"otter_panda"}]}}
+[debug] [2024-04-06T11:36:08.108Z] [work-queue] {"queuedWork":["us-central1-onUserCreate-0-2024-04-06T11:36:08.108Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-06T11:36:08.109Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["us-central1-onUserCreate-0-2024-04-06T11:36:08.108Z"],"workRunningCount":1}
+[debug] [2024-04-06T11:36:08.109Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-06T11:36:08.110Z] <<< [apiv2][status] POST http://127.0.0.1:5001/functions/projects/learning-nextjs-firebase-2429f/trigger_multicast 200
+[debug] [2024-04-06T11:36:08.111Z] <<< [apiv2][body] POST http://127.0.0.1:5001/functions/projects/learning-nextjs-firebase-2429f/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2024-04-06T11:36:08.111Z] [work-queue] {"queuedWork":["/functions/projects/learning-nextjs-firebase-2429f/triggers/us-central1-onUserCreate-0-2024-04-06T11:36:08.111Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-06T11:36:08.112Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/functions/projects/learning-nextjs-firebase-2429f/triggers/us-central1-onUserCreate-0-2024-04-06T11:36:08.111Z"],"workRunningCount":1}
+[debug] [2024-04-06T11:36:08.112Z] Accepted request POST /functions/projects/learning-nextjs-firebase-2429f/triggers/us-central1-onUserCreate-0 --> us-central1-onUserCreate-0
+[debug] [2024-04-06T11:36:08.114Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-04-06T11:36:08.114Z] [functions] Got req.url=/functions/projects/learning-nextjs-firebase-2429f/triggers/us-central1-onUserCreate-0, mapping to path=/functions/projects/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/functions/projects/learning-nextjs-firebase-2429f/triggers/us-central1-onUserCreate-0, mapping to path=/functions/projects/"}}
+[debug] [2024-04-06T11:36:08.114Z] [worker-pool] submitRequest(triggerId=us-central1-onUserCreate) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-onUserCreate)"}}
+[info] i  functions: Beginning execution of "us-central1-onUserCreate" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"Beginning execution of \"us-central1-onUserCreate\""}}
+[debug] [2024-04-06T11:36:08.115Z] [worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: BUSY"}}
+[debug] [2024-04-06T11:36:08.118Z] [runtime-status] [9200] ProcessBackground: lifting resource.name from resource {"name":"projects/learning-nextjs-firebase-2429f","service":"firebaseauth.googleapis.com"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] ProcessBackground: lifting resource.name from resource {\"name\":\"projects/learning-nextjs-firebase-2429f\",\"service\":\"firebaseauth.googleapis.com\"}"}}
+[debug] [2024-04-06T11:36:08.118Z] [runtime-status] [9200] RunBackground {"data":{"uid":"ltYCZOEQVcHyUr88PZhRCggq0etK","email":"admin@example.com","emailVerified":true,"displayName":"Panda Otter","metadata":{"creationTime":"2024-04-06T11:36:08.104Z","lastSignInTime":"2024-04-06T11:36:08.104Z"},"customClaims":{},"providerData":[{"providerId":"google.com","rawId":"0026372541481885082238940265186621611204","federatedId":"0026372541481885082238940265186621611204","displayName":"Panda Otter","email":"admin@example.com","screenName":"otter_panda"}]},"context":{"eventId":"83e1f044-793c-4a83-be6b-e11e84c43721","eventType":"providers/firebase.auth/eventTypes/user.create","resource":"projects/learning-nextjs-firebase-2429f","params":{},"timestamp":"2024-04-06T11:36:08.104Z"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[runtime-status] [9200] RunBackground {\"data\":{\"uid\":\"ltYCZOEQVcHyUr88PZhRCggq0etK\",\"email\":\"admin@example.com\",\"emailVerified\":true,\"displayName\":\"Panda Otter\",\"metadata\":{\"creationTime\":\"2024-04-06T11:36:08.104Z\",\"lastSignInTime\":\"2024-04-06T11:36:08.104Z\"},\"customClaims\":{},\"providerData\":[{\"providerId\":\"google.com\",\"rawId\":\"0026372541481885082238940265186621611204\",\"federatedId\":\"0026372541481885082238940265186621611204\",\"displayName\":\"Panda Otter\",\"email\":\"admin@example.com\",\"screenName\":\"otter_panda\"}]},\"context\":{\"eventId\":\"83e1f044-793c-4a83-be6b-e11e84c43721\",\"eventType\":\"providers/firebase.auth/eventTypes/user.create\",\"resource\":\"projects/learning-nextjs-firebase-2429f\",\"params\":{},\"timestamp\":\"2024-04-06T11:36:08.104Z\"}}"}}
+[debug] [2024-04-06T11:36:08.162Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-onUserCreate" in 47.374ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"Finished \"us-central1-onUserCreate\" in 47.374ms"}}
+[debug] [2024-04-06T11:36:08.164Z] [worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: IDLE"}}
+[debug] [2024-04-06T11:36:08.164Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-04-06T11:36:08.165Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-04-06T11:36:08.165Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-06T11:36:30.830Z] Apr 06, 2024 4:36:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:36:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:36:31.148Z] Apr 06, 2024 4:36:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:36:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:36:31.263Z] Apr 06, 2024 4:36:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:36:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:36:39.143Z] Apr 06, 2024 4:36:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Apr 06, 2024 4:36:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:36:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\nApr 06, 2024 4:36:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:36:41.273Z] Apr 06, 2024 4:36:41 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:36:41 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\r\nINFO: Websocket client disconnected\r\n"}}
+[debug] [2024-04-06T11:36:41.433Z] Apr 06, 2024 4:36:41 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:36:41 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\r\nINFO: Connected to new websocket client\r\n"}}
+[debug] [2024-04-06T11:36:48.547Z] Apr 06, 2024 4:36:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:36:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:36:50.054Z] Apr 06, 2024 4:36:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:36:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:37:35.504Z] Apr 06, 2024 4:37:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:37:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:38:18.948Z] File C:\learning\_learning-nextjs-firebase\lib\firebase\functions\src\index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\learning\\_learning-nextjs-firebase\\lib\\firebase\\functions\\src\\index.ts changed, reloading triggers"}}
+[debug] [2024-04-06T11:38:19.955Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-04-06T11:38:21.774Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-06T11:38:21.775Z] Building nodejs source
+[debug] [2024-04-06T11:38:21.775Z] Failed to find version of module node: reached end of search path C:\learning\_learning-nextjs-firebase\lib\firebase\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-06T11:38:21.778Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-06T11:38:21.786Z] Found firebase-functions binary at 'C:\learning\_learning-nextjs-firebase\lib\firebase\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8990
+
+[debug] [2024-04-06T11:38:22.406Z] Got response from /__/functions.yaml {"endpoints":{"onUserCreate":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"eventTrigger":{"eventType":"providers/firebase.auth/eventTypes/user.create","eventFilters":{"resource":"projects/learning-nextjs-firebase-2429f"},"retry":false},"labels":{},"entryPoint":"onUserCreate"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: onUserCreate. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: onUserCreate."}}
+[debug] [2024-04-06T11:38:27.435Z] [worker-pool] Shutting down IDLE worker (us-central1-onUserCreate) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-onUserCreate)"}}
+[debug] [2024-04-06T11:38:27.436Z] [worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: FINISHING"}}
+[debug] [2024-04-06T11:38:27.440Z] Apr 06, 2024 4:38:27 PM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:38:27 PM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException\r\nWARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.\r\njava.net.SocketException: Connection reset\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)\r\n\tat io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)\r\n\tat io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)\r\n\tat io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)\r\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:840)\r\n\r\n"}}
+[debug] [2024-04-06T11:38:27.449Z] File C:\learning\_learning-nextjs-firebase\lib\firebase\functions\src\index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\learning\\_learning-nextjs-firebase\\lib\\firebase\\functions\\src\\index.ts changed, reloading triggers"}}
+[debug] [2024-04-06T11:38:27.451Z] [worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: exited"}}
+[debug] [2024-04-06T11:38:27.452Z] [worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-onUserCreate"},"extension":{},"message":"[worker-us-central1-onUserCreate-a9b80ffe-8afd-480c-967d-6ec5f9ee261f]: FINISHED"}}
+[debug] [2024-04-06T11:38:28.478Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-04-06T11:38:30.032Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-06T11:38:30.032Z] Building nodejs source
+[debug] [2024-04-06T11:38:30.032Z] Failed to find version of module node: reached end of search path C:\learning\_learning-nextjs-firebase\lib\firebase\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-06T11:38:30.033Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-06T11:38:30.040Z] Found firebase-functions binary at 'C:\learning\_learning-nextjs-firebase\lib\firebase\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8023
+
+[debug] [2024-04-06T11:38:30.669Z] Got response from /__/functions.yaml {"endpoints":{"onUserCreate":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"eventTrigger":{"eventType":"providers/firebase.auth/eventTypes/user.create","eventFilters":{"resource":"projects/learning-nextjs-firebase-2429f"},"retry":false},"labels":{},"entryPoint":"onUserCreate"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-04-06T11:38:35.537Z] Apr 06, 2024 4:38:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:38:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[info] +  functions: Loaded functions definitions from source: onUserCreate. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: onUserCreate."}}
+[debug] [2024-04-06T11:39:35.555Z] Apr 06, 2024 4:39:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:39:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:40:35.612Z] Apr 06, 2024 4:40:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:40:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:41:21.489Z] Apr 06, 2024 4:41:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:41:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:42:21.524Z] Apr 06, 2024 4:42:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:42:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:43:21.560Z] Apr 06, 2024 4:43:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:43:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:44:07.485Z] Apr 06, 2024 4:44:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:44:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:45:07.530Z] Apr 06, 2024 4:45:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:45:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:46:07.554Z] Apr 06, 2024 4:46:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:46:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:47:07.580Z] Apr 06, 2024 4:47:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:47:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:48:07.610Z] Apr 06, 2024 4:48:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:48:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:49:07.642Z] Apr 06, 2024 4:49:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:49:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:50:07.673Z] Apr 06, 2024 4:50:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:50:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:51:07.704Z] Apr 06, 2024 4:51:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:51:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:52:07.791Z] Apr 06, 2024 4:52:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:52:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:53:07.806Z] Apr 06, 2024 4:53:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:53:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:54:07.820Z] Apr 06, 2024 4:54:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:54:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:55:07.846Z] Apr 06, 2024 4:55:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:55:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:56:07.879Z] Apr 06, 2024 4:56:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:56:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:57:23.482Z] Apr 06, 2024 4:57:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:57:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:58:23.520Z] Apr 06, 2024 4:58:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:58:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T11:59:23.553Z] Apr 06, 2024 4:59:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 4:59:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T12:00:09.471Z] Apr 06, 2024 5:00:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 5:00:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T12:01:09.497Z] Apr 06, 2024 5:01:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 5:01:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T12:02:09.522Z] Apr 06, 2024 5:02:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 5:02:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T12:03:09.553Z] Apr 06, 2024 5:03:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 5:03:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T12:04:09.588Z] Apr 06, 2024 5:04:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 5:04:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T12:05:09.627Z] Apr 06, 2024 5:05:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 5:05:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T12:06:09.658Z] Apr 06, 2024 5:06:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 5:06:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T12:07:09.680Z] Apr 06, 2024 5:07:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 5:07:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T12:08:09.705Z] Apr 06, 2024 5:08:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 5:08:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T12:09:09.731Z] Apr 06, 2024 5:09:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 5:09:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T12:10:09.756Z] Apr 06, 2024 5:10:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 5:10:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T12:10:55.474Z] Apr 06, 2024 5:10:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 5:10:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T12:11:55.504Z] Apr 06, 2024 5:11:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 5:11:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T12:12:55.529Z] Apr 06, 2024 5:12:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 5:12:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T12:13:55.565Z] Apr 06, 2024 5:13:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 5:13:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-04-06T12:14:55.588Z] Apr 06, 2024 5:14:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 06, 2024 5:14:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}

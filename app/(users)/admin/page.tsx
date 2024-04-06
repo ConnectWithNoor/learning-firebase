@@ -1,15 +1,29 @@
 import { ItemAccess, ItemType } from "@/app/api/items/route";
-import { getAuth } from "firebase-admin/auth";
+import { firebaseAuth } from "@/lib/firebase/server";
+import { DecodedIdToken } from "firebase-admin/auth";
 import { cookies } from "next/headers";
 import React from "react";
 
 type Props = {};
 
 async function AdminPage({}: Props) {
+  // get user jwt token by cookies
   const cookieStore = cookies();
   const authToken = cookieStore.get("firebaseIdToken")?.value;
 
   if (!authToken) {
+    return <h1 className="text-white text-xl mb-10">Restricted page</h1>;
+  }
+
+  // check if it is a valid token & get user custom claims (role) for admin
+  let user: DecodedIdToken | undefined = undefined;
+  try {
+    user = await firebaseAuth?.verifyIdToken(authToken);
+  } catch (error) {
+    console.error(error);
+  }
+
+  if (!user || user.role !== "admin") {
     return <h1 className="text-white text-xl mb-10">Restricted page</h1>;
   }
 

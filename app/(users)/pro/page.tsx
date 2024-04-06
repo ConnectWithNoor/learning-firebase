@@ -7,15 +7,15 @@ import React from "react";
 type Props = {};
 
 async function ProPage({}: Props) {
+  // get user jwt token by cookies
   const cookieStore = cookies();
   const authToken = cookieStore.get("firebaseIdToken")?.value;
 
   if (!authToken) {
     return <h1 className="text-white text-xl mb-10">Restricted page</h1>;
   }
-
+  // check if it is a valid token
   let user: DecodedIdToken | undefined = undefined;
-  console.log(authToken);
   try {
     user = await firebaseAuth?.verifyIdToken(authToken);
   } catch (error) {
@@ -26,16 +26,20 @@ async function ProPage({}: Props) {
     return <h1 className="text-white text-xl mb-10">Restricted page</h1>;
   }
 
+  // get the user role from the firestore
   let userInfo = null;
 
-  const userrInfoResp = await fetch(`/api/users/${user.uid}`);
-  if (userrInfoResp.ok) {
-    userInfo = await userrInfoResp.json();
+  const userInfoResp = await fetch(
+    `${process.env.API_URL}/api/users/${user.uid}`
+  );
+  if (userInfoResp.ok) {
+    userInfo = (await userInfoResp.json()) as { isPro: boolean };
   }
 
   const isPro = userInfo?.isPro;
 
-  if (isPro) {
+  // if user dont have the pro role
+  if (!isPro) {
     return <h1 className="text-white text-xl mb-10">Restricted page</h1>;
   }
 

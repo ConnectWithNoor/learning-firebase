@@ -48,7 +48,6 @@ function FirebaseAuthProvider({ children }: Props) {
       if (user) {
         setCurrentUser(user);
         const token = await user.getIdToken();
-        console.log(token);
         setAuthToken(token);
 
         // get the token values (custom claims)

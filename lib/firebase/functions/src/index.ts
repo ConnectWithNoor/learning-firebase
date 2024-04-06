@@ -9,10 +9,12 @@ initializeApp(config().firebase);
 // run function everytime a user is created
 const onUserCreate = auth.user().onCreate(async (user) => {
   if (user.email && user.email === "admin@example.com") {
+    // admin will have pro access
     await firestore().doc(`users/${user.uid}`).create({
       isPro: true,
     });
 
+    // set custom claims for the admin
     const customClaims = {
       role: "admin",
     };
