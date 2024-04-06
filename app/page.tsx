@@ -1,9 +1,19 @@
+import { cookies } from "next/headers";
 import { ItemAccess, ItemType } from "./api/items/route";
 
 export default async function Home() {
+  // get user jwt token by cookies
+  const cookieStore = cookies();
+  const authToken = cookieStore.get("firebaseIdToken")?.value;
+
   let items: ItemType[] = [];
 
-  const response = await fetch(`${process.env.API_URL}/api/items`);
+  const response = await fetch(`${process.env.API_URL}/api/items`, {
+    headers: {
+      Authorization: `Bearer ${authToken}`,
+    },
+  });
+
   if (response.ok) {
     const itemsJson = await response.json();
     if (itemsJson && Array.isArray(itemsJson)) {

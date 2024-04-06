@@ -29,7 +29,11 @@ async function AdminPage({}: Props) {
 
   let items: ItemType[] = [];
 
-  const response = await fetch(`${process.env.API_URL}/api/items`);
+  const response = await fetch(`${process.env.API_URL}/api/items`, {
+    headers: {
+      Authorization: `Bearer ${authToken}`,
+    },
+  });
   if (response.ok) {
     const itemsJson = await response.json();
     if (itemsJson && Array.isArray(itemsJson)) {

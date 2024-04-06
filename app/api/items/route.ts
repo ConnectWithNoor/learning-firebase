@@ -1,4 +1,5 @@
-import { firestore } from "@/lib/firebase/server";
+import { firebaseAuth, firestore } from "@/lib/firebase/server";
+import { DecodedIdToken } from "firebase-admin/auth";
 import { NextRequest, NextResponse } from "next/server";
 
 export enum ItemAccess {
@@ -32,7 +33,63 @@ export async function GET(request: NextRequest) {
     if (!firestore) {
       return new NextResponse("No firebase", { status: 500 });
     }
-    const response = await firestore.collection("items").get();
+
+    // get authoirzation token from the request headers
+    const authToken = request.headers.get("authorization")?.split("Bearer ")[1];
+
+    let user: DecodedIdToken | undefined = undefined;
+    if (authToken)
+      // check if it is a valid token & get user custom claims (role) for admin
+      try {
+        user = await firebaseAuth?.verifyIdToken(authToken);
+      } catch (error) {
+        console.error(error);
+      }
+
+    const isUserAdmin = user?.role === "admin";
+
+    // get the user role from the firestore
+    let userInfo = null;
+    if (user) {
+      const userInfoResp = await fetch(
+        `${process.env.API_URL}/api/users/${user.uid}`,
+        {
+          headers: {
+            Authorization: `Bearer ${authToken}`,
+          },
+        }
+      );
+      if (userInfoResp.ok) {
+        userInfo = (await userInfoResp.json()) as { isPro: boolean };
+      }
+    }
+
+    const isUserPro = userInfo?.isPro;
+
+    // get the items based on the user role
+    const firestoreCall =
+      user && !isUserPro && !isUserAdmin
+        ? firestore //for free user
+            .collection("items")
+            .where("access", "in", [ItemAccess.PUBLIC, ItemAccess.USER])
+            .get()
+        : isUserPro && !isUserAdmin
+        ? firestore //for pro user
+            .collection("items")
+            .where("access", "in", [
+              ItemAccess.PUBLIC,
+              ItemAccess.USER,
+              ItemAccess.PRO,
+            ])
+            .get()
+        : isUserAdmin
+        ? firestore.collection("items").get() //for admin
+        : firestore //for public (not logged in user)
+            .collection("items")
+            .where("access", "==", ItemAccess.PUBLIC)
+            .get();
+
+    const response = await firestoreCall;
     const items = response.docs.map((doc) => doc.data() as ItemType);
 
     // if the collection is empty, we will seed the data by batch.

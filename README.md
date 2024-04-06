@@ -38,6 +38,8 @@ npm run emulators
 - flow goes from user first ever signin (client) triggers the firebase function which creates that new user collection in firestore along with a custom claim (role for the user on the authentication side).
 - Every signin fetches that custom role (getIdTokenResult) to check if it is admin/pro/normal user and keep it in Auth Context provider(this is for client compoents)
 - For server compoenents, since it doesn't have access to Auth context provider, we have to store the jwt token in cookies to handle dynamic role based route protection on server components.
+- Added jwt bearer authentication on list API to access only role based data.
+- Added a security measure in user API by jwt bearer authentication to make sure user can only access data which belong to them.
 
 #### Authentication Strategies used
 
