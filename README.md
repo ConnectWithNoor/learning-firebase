@@ -1,9 +1,5 @@
 ## Learning how to use Firebase with Next.js server route
 
-![Preview]()
-
-#### Now Known as [Auth.js](https://authjs.dev/)
-
 First, do the following:
 
 ```js
